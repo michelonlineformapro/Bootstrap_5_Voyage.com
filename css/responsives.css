@@ -1,0 +1,92 @@
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 990px) {
+    body{
+        background-color: #5E2750;
+    }
+}
+
+@media (max-width: 768px) {
+    /*NAVBAR*/
+    #right-nav{
+        display: block!important;
+    }
+    #right-nav input{
+        margin-top: 20px;
+    }
+    #right-nav button{
+        margin-top: 20px;
+    }
+    /*Bloc 1*/
+    #article-bloc1{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    /*Bloc 2*/
+    #bloc-2{
+        padding: 20px;
+    }
+    /*Bloc 3*/
+    #article-bloc2{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+    .bloc-3-infos{
+        display: block!important;
+    }
+    .bloc-3-carte-texte{
+        font-size: 16px;
+    }
+    /*Bloc 5*/
+    #bloc-5{
+        margin-top: 40px;
+    }
+    #carouselExampleCaptions{
+        margin-top: 40px;
+    }
+    /*Bloc 6*/
+    #bloc-6{
+        margin-top: 40px;
+    }
+    #bloc-6 div{
+        padding-top: 40px;
+    }
+    /*Block 7*/
+    #bloc-4{
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+    }
+    /*Footer*/
+    #footer-parent{
+        display: block!important;
+        width: 100%;
+        text-align: center;
+
+    }
+    .footer-center{
+        display: block!important;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-center-right{
+        margin: 0;
+    }
+    .footer-right{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

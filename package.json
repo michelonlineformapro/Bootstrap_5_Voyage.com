@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap5",
+  "version": "1.0.0",
+  "description": "bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "michel michael",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
