@@ -25,14 +25,25 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <!--La feuille de style pour le responsive-->
     <link rel="stylesheet" href="css/responsives.css" type="text/css">
+    <!--Aniamtion avec css et animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!--Titre de l'onglet dans le navigateur-->
     <title>Voyage.com Découvrez le monde a petit prix</title>
 </head>
-<body>
+<body id="cible-btn-footer">
 <!--NAVBAR de couleur blanche-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!--Elle prend 100% de la page via la classe container-fluid-->
     <div class="container-fluid">
+        
+        <!--TEST DE CANVAS OFFSET-->
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-ellipsis-v fa-2x"></i>
+        </a>
+      
+
+        <!---FUN FU CANVAS-->
         <!--Un liens + le logo voyage.com-->
         <a class="navbar-brand" href="#">
             <img src="img/logo.png" alt="voyage.com" title="Voyage.com" width="50%">
@@ -45,7 +56,7 @@
             <!--Une liste avec les liens de navigation-->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Services</a>
+                    <a class="nav-link active" aria-current="page" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Offres du mois</a>
@@ -73,7 +84,42 @@
             </ul>
             <!--2 boutons + barre de recherche sur la droite -->
             <form class="d-flex" id="right-nav">
-                <a class="nav-link" href="#">CONNEXION</a>
+                
+                <!--Test de trigger modal-->
+                <a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup1">Connexion</a>
+                <!--CONTENU DE LA FEN7TRE MODALE POPUP-->
+                <!-- Modal -->
+                <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"CONNEXION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+
+                                <div class="mb-3">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="exemple@exemple.com" required/>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="moptdepasee" required/>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">FERMER</button>
+                        <button type="button" class="btn btn-primary">VALIDER</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
                 <a href="" id="incription" class="mr-3 btn btn-outline-warning" type="submit">INSCRIPTION</a>
                 <input class="ml-3 form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Rechercher</button>
@@ -82,13 +128,33 @@
     </div>
 </nav>
 
+
+    
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action bg-warning" aria-current="true">
+          NAVIGATION
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">SERVICES</a>
+        <a href="#" class="list-group-item list-group-item-action">OFFRES DU MOIS</a>
+        <a href="#" class="list-group-item list-group-item-action">PAYS</a>
+        
+      </div>
+    </div>
+  </div>
+
 <!--Le block 1 prend 100% de la page-->
-<div id="block-1" class="container-fluid">
+<div id="block-1" class="animate__animated animate__fadeIn container-fluid">
     <!--id contient la photo la classe ajoute un padding-bottom quand ecran >= 992px-->
     <section id="bloc-1-section" class="pb-lg-5">
         <!--article prend 600px de large une marge a gauche de 10% + padding top de 100px soit en bootstrap class="ml-lg-5 pt-lg-5"-->
         <article id="article-bloc1">
             <h4 class="titre-h4">Toutes les destination autours du monde</h4>
+            <hr style="border: solid 5px green;" />
             <h1 class="titre-h1">Voyagez, profitez et vivez une vie nouvelle et pleine d'aventure</h1>
             <h5 class="titre-h5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</h5>
             <!--ici margin-top 1em-->
@@ -107,7 +173,7 @@
 </div>
 
 <!--Un conteneur de 100%-->
-<div class="mt-lg-5 container-fluid">
+<div class="animate__animated animate__swing mt-lg-5 container-fluid">
     <section id="bloc-2">
         <!--Bloc de titre centrer grace a class text-center -->
         <div class="text-center">
@@ -165,7 +231,7 @@
 </div>
 
 <!--BLOC 3-->
-<div class="mt-lg-5 container-fluid">
+<div class="animate__animated animate__bounce mt-lg-5 container-fluid">
     <section id="bloc-3">
         <div class="text-center">
             <h4 class="titre-h4">TOP DES VENTES</h4>
@@ -226,7 +292,7 @@
 </div>
 
 <!--BLOC 3 conteneur de 100ù de la page-->
-<div class="mt-lg-5 container-fluid">
+<div class="animate__animated animate__fadeIn mt-lg-5 container-fluid">
     <!--j'ajoute un conteneur avex des marge a gauche et droite-->
     <section id="bloc-4" class="container">
         <!--On decoupe-->
@@ -291,7 +357,7 @@
 </div>
 
 <!--BLOC 5-->
-<div class="mt-lg-5 container-fluid">
+<div class="animate__animated animate__fadeIn mt-lg-5 container-fluid">
     <section id="bloc-5" class="container">
         <!--Decoupe du conteneur comme le bloc precedent-->
         <div class="row">
@@ -336,7 +402,7 @@
 </div>
 
 <!--BLOC 6 bloc 100%-->
-<div class="mt-lg-5 container-fluid">
+<div class="animate__animated animate__flip mt-lg-5 container-fluid">
     <section id="bloc-6">
         <!--Decoupe du bloc 3*4 = 12 + achaque fois une images-->
         <div class="row text-center">
@@ -357,7 +423,7 @@
 </div>
 
 <!--Bloc 7-->
-<div class="mt-lg-5 container">
+<div class="animate__animated animate__rotateIn mt-lg-5 container">
     <!--Appel d'une image sur id block 7-->
     <section id="bloc-7">
         <div class="form-content text-center">
@@ -370,13 +436,74 @@
                 <input type="email" required class="form-control" id="newsletter" name="newsletter" placeholder="email@email.com"/>
                 <button id="btn-form" class="btn btn-outline-success">S'incrire</button>
             </form>
-        </div>
+            <form action="index.html" method="get">
+                <h2 class="text-center text-white bg-danger p-3">CONEXION</h2>
+            
+                <div class="mb-4">
+                  <label for="email">Votre email</label>
+                  <input type="email" class="form-control" required placeholder="SALUT CA VA" id="email" name="email" />
+                </div>
+          
+                <div class="mb-4">
+                  <label for="select">Votre age</label>
+                  <select name="age" class="form-control" id="select">
+                    <option>15-30</option>
+                    <option>30-60</option>
+                    <option>60-90</option>
+                  </select>
+                </div>
+          
+                <div class="mb-4">
+                  <label for="texte">Votre message</label>
+                  <textarea rows="2" class="form-control" placeholder="Votre message"></textarea>
+                </div>
+          
+                <div class="mb-4">
+                  <label for="customRange2" class="form-label">Votre budget</label>
+                  <input type="range" class="form-range" min="0" max="10" id="customRange2">
+                </div>
+          
+                <div class="mb-4">
+                  <label for="file">Charger votre photo</label>
+                  <input type="file" class="form-control form-control-lg" name="file" id="file" />
+                </div>
+            
+                <button class="mb-4 btn btn-outline-danger" type="submit">Valider</button>
+              </form> 
+            </div>
+          
+            <div class="container">
+          
+              <div class="row">
+          
+                <div class="col">
+                  <input type="text" placeholder="nom" name="" class="form-control mb-2" />
+                  <input type="text" placeholder="prenom" name="" class="form-control mb-2" />
+                </div>
+          
+                <div class="col">
+                  <input type="number" placeholder="age" name="" class="form-control mb-2" />
+                  <input type="text" placeholder="ville" name="" class="form-control mb-2" />
+                </div>
+          
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Etes vous majeur ?</label>
+                </div>
+          
+              </div>
+          
+            </div>
+</div>
 
-    </section>
+</section>
+    <a href="#cible-btn-footer" class="btn btn-outline-success mx-5 d-flex justify-content-end">
+        <i class="fas fa-arrow-up fa-3x text-dark"></i>
+    </a>
 </div>
 
 <!--Footer identique au site jadoo conteneur 100%-->
-<footer class="mt-lg-5 container-fluid">
+<footer class="animate__animated animate__fadeIn mt-lg-5 container-fluid">
     <!--ici display flex + justify content space around pour espacer les 3 blocs horizontalement-->
         <div id="footer-parent" class="d-flex justify-content-around align-items-center">
 
