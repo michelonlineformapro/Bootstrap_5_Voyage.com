@@ -6,6 +6,7 @@ html, body{
     background-color: white;
     color: orangered;
     font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
 }
 
 a{
