@@ -59,7 +59,7 @@
                     <a class="nav-link active" aria-current="page" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Offres du mois</a>
+                    <a class="nav-link" href="#">Offres</a>
                 </li>
                 <!--Liens dropdown qui s'ouve au clic grace a javascript-->
                 <li class="nav-item dropdown">
@@ -86,7 +86,7 @@
             <form class="d-flex" id="right-nav">
                 
                 <!--Test de trigger modal-->
-                <a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup1">Connexion</a>
+                <a href="#" type="button" class="mx-2 btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#popup1">CONNEXION</a>
                 <!--CONTENU DE LA FEN7TRE MODALE POPUP-->
                 <!-- Modal -->
                 <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -121,7 +121,7 @@
 
 
                 <a href="" id="incription" class="mr-3 btn btn-outline-warning" type="submit">INSCRIPTION</a>
-                <input class="ml-3 form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <input class="mx-2 form-control" style="width: 15%;" type="search" placeholder="Rechercher" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Rechercher</button>
             </form>
         </div>
@@ -162,8 +162,24 @@
     </div>
   </div>
 
+<!--ACCUEIL EN VIDEO-->
+<div class="container-fluid" id="video-conteneur">
+    <video autoplay muted loop id="champ-video">
+        <source src="img/champ.mp4" type="video/mp4"/>
+    </video>
+
+    <div class="content">
+        <h1 class="text-center text-warning">VOYAGE.COM</h1>
+        <h2 class="text-center text-warning">Une agence au plus pres de ses clients</h2>
+        <div class="text-center">
+            <button id="monBtn" class="mt-5 btn btn-warning">Nos offres</button>
+        </div> 
+    </div>
+</div>
+<!--Fin du block video-->
+
 <!--Le block 1 prend 100% de la page-->
-<div id="block-1" class="animate__animated animate__fadeIn container-fluid">
+<div id="block-1" class="mt-3 animate__animated animate__fadeIn container-fluid">
     <!--id contient la photo la classe ajoute un padding-bottom quand ecran >= 992px-->
     <section id="bloc-1-section" class="pb-lg-5">
         <!--article prend 600px de large une marge a gauche de 10% + padding top de 100px soit en bootstrap class="ml-lg-5 pt-lg-5"-->
@@ -187,6 +203,8 @@
         </article>
     </section>
 </div>
+
+
 
 <!--Un conteneur de 100%-->
 <div class="animate__animated animate__swing mt-lg-5 container-fluid">
