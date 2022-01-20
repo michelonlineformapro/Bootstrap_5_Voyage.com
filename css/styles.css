@@ -219,30 +219,31 @@ footer{
 }
 
 /****************************************VIDEO**************************/
+
 #video-conteneur{
+ 
     width: 100%;
 }
+
 #champ-video{
     position: relative;
     right: 0;
     bottom: 0;
     height: auto;
     width: 100%;
-    left: 0!important;
+    left: 0;
     top: 10px;
-
 }
 
-.content {
+.content{
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+    background-color: rgba(0,0,0,0.5);
     width: 50%;
     padding: 100px;
     left: 25%;
     right: auto;
     height: 450px;
     top: 40%;
-  }
+}
 

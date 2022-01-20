@@ -81,10 +81,23 @@
     .footer-right{
         padding-bottom: 40px;
     }
+    /*VIDEO*/
+    .content{
+        height: auto;
+        top:10%;
+        height: 200px;
+        background-color: transparent!important;
+    }
+    .content h2{
+        font-size: 20px!important;
+        color: peru!important;
+    }
 }
 
 @media (max-width: 576px) {
-
+    .content{
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {

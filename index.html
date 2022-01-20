@@ -164,19 +164,25 @@
 
 <!--ACCUEIL EN VIDEO-->
 <div class="container-fluid" id="video-conteneur">
-    <video autoplay muted loop id="champ-video">
+    <!--ICI LA BALISE HTML VIDEO-->
+    <video autoplay loop muted id="champ-video">
         <source src="img/champ.mp4" type="video/mp4"/>
     </video>
 
+     <!--DU TEXTE A AFFICHER SUR LE BLOC DE VIDEO-->
     <div class="content">
-        <div class="text-center text-warning rounded bg-warning p-3">
-            <img src="img/logo.png" alt="voyage.com" title="voyage.com"/>
+        <div class=" text-center text-warning rounded bg-warning p-3">
+            <img src="img/logo.png" class="img-fluid" alt="Voyage.com" title="Voyage.com"/>
         </div>
         <h2 class="text-center text-warning">Une agence proche de ses clients</h2>
         <div class="text-center">
-            <button id="monBtn" class="mt-5 btn btn-warning">Nos offres</button>
-        </div> 
+            <a href="offres.html" class="btn btn-info">Nos offres</a>
+        </div>
+        
     </div>
+   
+    
+
 </div>
 <!--Fin du block video-->
 
